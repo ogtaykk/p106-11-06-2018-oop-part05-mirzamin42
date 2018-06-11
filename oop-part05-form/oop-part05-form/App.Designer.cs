@@ -36,6 +36,7 @@
             this.categoryList = new System.Windows.Forms.ComboBox();
             this.categoryName = new System.Windows.Forms.TextBox();
             this.addCategoryButton = new System.Windows.Forms.Button();
+            this.catProductsButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // productName
@@ -105,11 +106,22 @@
             this.addCategoryButton.UseVisualStyleBackColor = true;
             this.addCategoryButton.Click += new System.EventHandler(this.addCategoryButton_Click);
             // 
+            // catProductsButton
+            // 
+            this.catProductsButton.Location = new System.Drawing.Point(206, 65);
+            this.catProductsButton.Name = "catProductsButton";
+            this.catProductsButton.Size = new System.Drawing.Size(139, 23);
+            this.catProductsButton.TabIndex = 7;
+            this.catProductsButton.Text = "Show Category Products";
+            this.catProductsButton.UseVisualStyleBackColor = true;
+            this.catProductsButton.Click += new System.EventHandler(this.catProductsButton_Click);
+            // 
             // App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 436);
+            this.Controls.Add(this.catProductsButton);
             this.Controls.Add(this.addCategoryButton);
             this.Controls.Add(this.categoryName);
             this.Controls.Add(this.categoryList);
@@ -135,5 +147,6 @@
         public System.Windows.Forms.ComboBox categoryList;
         private System.Windows.Forms.TextBox categoryName;
         private System.Windows.Forms.Button addCategoryButton;
+        private System.Windows.Forms.Button catProductsButton;
     }
 }

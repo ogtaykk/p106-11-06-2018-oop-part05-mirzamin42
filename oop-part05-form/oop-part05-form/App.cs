@@ -54,5 +54,18 @@ namespace oop_part05_form
                 categoryList.Items.Add(item.Name);
             }
         }
+
+        private void catProductsButton_Click(object sender, EventArgs e)
+        {
+            var selectedCategory = categoryList.SelectedItem.ToString();
+            productListView.Text = string.Empty;
+            foreach (var item in Entity.Products)
+            {
+                if (item.CategoryName == selectedCategory)
+                {
+                    productListView.Text += item.Id + " . " + item.Name + " / " + item.CategoryName + " / " + item.Price + "\r\n";
+                }
+            }
+        }
     }
 }
