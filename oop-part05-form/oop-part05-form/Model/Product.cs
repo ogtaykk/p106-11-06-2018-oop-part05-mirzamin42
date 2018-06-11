@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace oop_part05.Model
+namespace oop_part05_form.Model
 {
     class Product
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public int Price { get; set; }
+        public string CategoryName { get; set; }
         /*
         public Product()
         {
@@ -34,6 +35,6 @@ namespace oop_part05.Model
 
         }
         */
-        
+
     }
 }
